@@ -127,6 +127,10 @@ STATICFILES_DIRS = [
     BASE_DIR / "static"
 ]
 
+                 
+heroku config:set DEBUG_COLLECTSTATIC=1
+heroku config:set DISABLE_COLLECTSTATIC=1
+
 
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
