@@ -1,0 +1,21 @@
+{% block content %}
+
+
+    <div class="form">
+        <form method="POST">
+            {% csrf_token %}
+            <center>
+                <h2>{{poll.Title}}</h2><br><br>
+                <div style="width:500px" class="form-group">{{poll.o1}}: <input class="form-control" name="on1"
+                        type="radio"></div><br>
+                <div style="width:500px">{{poll.o2}}: <input class="form-control" name="on2" type="radio"></div><br>
+                <div style="width:500px">{{poll.o3}}: <input class="form-control" name="on3" type="radio"></div><br>
+                <div style="width:500px">{{poll.o4}}: <input class="form-control" name="on4" type="radio"></div><br><br>
+                <div>
+                    <center><input class="btn btn-primary" type="submit" class="buttn">
+                </div>
+            </center>
+        </form>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,393 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<style>
+   @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+.navbar{
+    padding: 0;
+}
+.navbar-brand {
+        font-family: 'Lobster', cursive;
+        font-size: 30px;
+
+
+    }
+
+    
+    .container-fluid {
+        font-family: 'Mulish', sans-serif;
+        font-size: 20px;
+
+        background-color: #2f2e41;
+    }
+
+    .collapse {
+        text-align: right;
+        font-weight: lighter;
+
+    }
+
+    .btn {
+        color: white;
+        border: 2px solid #f50057;
+        margin-right: 40px;
+
+    }
+
+    .btn:hover {
+        background-color: #f50057;
+        border: 2px solid white;
+    }
+
+
+
+    /* css for landing page start here*/
+
+
+    #container {
+
+        margin: 0;
+        padding: 0;
+        display: flex;
+
+
+
+    }
+
+    #content {
+        padding: 50px;
+        padding-top: 124px;
+        width: 50%;
+
+
+
+    }
+
+    #head {
+        font-size: 80px;
+        color: #2f2e41;
+        font-family: 'Lobster', cursive;
+        background: rgba(255, 184, 184, 0.4);
+        backdrop-filter: blur(10px);
+        padding-left: 40px;
+    }
+
+    #subhead {
+        font-size: 40px;
+        color: #2f2e41;
+        font-family: 'Lobster', cursive;
+        background: rgba(255, 184, 184, 0.4);
+        backdrop-filter: blur(10px);
+        padding-left: 40px;
+
+    }
+
+    #description {
+        font-size: 20px;
+        color: #2f2e41;
+        padding-top: 20px;
+        padding-right: 100px;
+        font-family: 'Mulish', sans-serif;
+        text-align: justify;
+        background: rgba(255, 184, 184, 0.4);
+        backdrop-filter: blur(10px);
+        padding: 40px;
+    }
+ 
+    * {
+        margin: 0;
+        padding: 0;
+       
+
+
+    }
+
+    body {
+        background: linear-gradient(360deg, #2f2e41 10%, #f50057 80%);
+        font-family: 'Mulish', sans-serif;
+     
+    }
+    h1{
+        font-family: 'Lobster', cursive;
+        color: white;
+        padding: 10px;
+        margin-top: 10px;
+        text-align: center;
+
+    }
+
+    .flexbox {
+        display: flex;
+        margin: 100px;
+
+    }
+
+    .team {
+        display: flex;
+        height: 500px;
+        width: 480px;
+
+        margin-left: 80px;
+
+    }
+
+    .teammember {
+        height: 500px;
+        width: 400px;
+        border: 2px solid white;
+        background-color: white;
+        box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.5);
+        text-align: center;
+
+        z-index: 100;
+
+    }
+
+    .contact {
+        height: 500px;
+        width: 80px;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.5);
+        background-color: white;
+
+        position: relative;
+        left: -80px;
+        z-index: 10;
+        transition: all .8s;
+
+    }
+
+    .team:hover .contact {
+
+        transform: translateX(80px);
+    }
+
+    .icon {
+        height: 70px;
+        padding: 10px;
+        margin-top: 40px;
+        display: block;
+    }
+
+    .personimg {
+        height: 300px;
+    }
+  
+    h2{
+        color: #3487f7;
+        font-family: 'Lobster', cursive;
+    }
+    p{
+        padding:10px ;
+        margin: 5px;
+    }
+    #footer {
+        font-family: 'Mulish', sans-serif;
+        text-align: center;
+        line-height: 30px;
+        
+        color: white;
+        padding-top: 100PX;
+    }
+
+    #contact {
+        font-family: 'Lobster', cursive;
+        letter-spacing: 2px;
+        margin: auto;
+        
+        padding: 30px;
+    }
+
+    .cont {
+        
+        color: white;
+        text-decoration: none;
+        margin: 30px;
+        padding: 20px;
+        font-size: 20px;
+        transition: all .4s;
+
+
+
+    }
+
+    .cont:hover {
+        font-size: 25px;
+        text-shadow: 0px 1px 5px black;
+        text-shadow: 0 0 20px #fff, 0 0 10px #f50057, 0 0 20px #f50057, 0 0 30px #ff4da6;
+    }
+
+
+    .aa {
+        padding: 10px;
+
+    }
+
+    a:hover {
+        color: white;
+    }
+
+   
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="{% static 'voting-poll1.png' %}" alt="" width="45" height="40" class="d-inline-block align-top">
+            </a>
+            <a class="navbar-brand" href="{% url 'home' %}" style="color:#f50057;">myPoll</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{% url 'home' %}" style="color:white;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about" style="color:white;">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'Tpolls' %}" style="color:white;">Polls</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" style="color:white;">
+                            Create a Poll
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+
+                <button class="btn btn-outline-success" type="submit">log in</button>
+
+            </div>
+        </div>
+    </nav>
+
+
+<h1>Our Contributors</h1>
+    <div style="margin-right: 250px;" class="container">
+        <div style="margin-right: 100px;" class="flexbox">
+            <div class="team">
+                <div class="teammember">
+                    <image src="{% static 'vamsi.png' %}" class="personimg"></image>
+                    <h2>M S Vamsi</h2>
+                    <p>(Backend Developer and Concept Designer)</p>
+                    <p> The idea was pitched by Vamsi. He also worked on planning, designing the website and is the sole backend developer of the team.</p>
+                </div>
+                <div class="contact">
+                  <a href="https://www.facebook.com/sai.vamsi.75470316" > <image class="icon" src="{% static 'facebook.png' %}"></image></a>
+                  <a href="https://www.instagram.com/beingoptimusp/">  <image class="icon" src="{% static 'instagram.png' %}"></image></a>
+                  <a href="https://www.linkedin.com/in/m-s-vamsi-63aa53205/">  <image class="icon" src="{% static 'linkedin.png' %}"></image></a>
+                  <a href="https://github.com/beingOptimusP">  <image class="icon" src="{% static 'github.png' %}"></image></a>
+
+
+                </div>
+            </div>
+            <div class="team">
+                <div class="teammember">
+                    <image src="{% static 'sarthak1.png' %}" class="personimg"></image>
+                    <h2>Sarthak Bindal</h2>
+                    <p>(Frontend Developer and Concept Designer)</p>
+                    <p>The concept designer and the other front end developer of team. He worked with all the other teammates as an allrounder. The initial design ideas were given by him.</p>
+
+
+                </div>
+                <div class="contact">
+                 <a href="https://www.facebook.com/sarthak.bindal.77/">   <image class="icon" src="{% static 'facebook.png' %}"></image></a>
+                 <a href="https://www.instagram.com/sarthak_0306/">   <image class="icon" src="{% static 'instagram.png' %}"></image></a>
+                 <a href="https://www.linkedin.com/in/sarthak-bindal-747a6b202/">   <image class="icon" src="{% static 'linkedin.png' %}"></image></a>
+                 <a href="https://github.com/bindalsarthak03">   <image class="icon" src="{% static 'github.png' %}"></image></a>
+
+
+
+                </div>
+            </div>
+
+        </div>
+        <div class="flexbox">
+            <div class="team">
+                <div class="teammember ">
+                    <image src="{% static 'prajjwal.png' %}" class="personimg"></image>
+                    <h2>Prajjwal Jogdand</h2>
+                    <p>(Frontend Developer and UI/UX Designer)</p>
+                    <p>The head UI/UX designer and Front end developer of team. He developed the font end of the tool with the help of other developer of the team.</p>
+                </div>
+                <div class="contact">
+                  <a href="">  <image class="icon" src="{% static 'facebook.png' %}"></image></a>
+                  <a href="https://www.instagram.com/prajjwaljogdand1?r=nametag">  <image class="icon" src="{% static 'instagram.png' %}"></image></a>
+                  <a href="https://www.linkedin.com/in/prajjwal-jogdand-562792201">  <image class="icon" src="{% static 'linkedin.png' %}"></image></a>
+                  <a href="https://github.com/prajjwaljogdand">  <image class="icon" src="{% static 'github.png' %}"></image></a>
+
+
+                </div>
+            </div>
+            <div class="team">
+                <div class="teammember">
+                    <image src="{% static 'harshraj.png' %}" class="personimg"></image>
+                    <h2>Harsh Raj Gupta</h2>
+                    <p>(content writer and video editor)</p>
+                    <p>The content writer of the team. All the content of page were written by  him. He also worked with other teammates on the design and features of tool</p>
+                </div>
+                <div class="contact">
+                 <a href="https://m.facebook.com/harsh.raj.520?ref=bookmarks">   <image class="icon" src="{% static 'facebook.png' %}"></image></a>
+                 <a href="https://www.instagram.com/harsh_raj_gupta07?r=nametag">   <image class="icon" src="{% static 'instagram.png' %}"></image></a>
+                 <a href="https://www.linkedin.com/in/harsh-raj-181801206/">   <image class="icon" src="{% static 'linkedin.png' %}"></image></a>
+                 <a href="https://github.com/Harshraj77">   <image class="icon" src="{% static 'github.png' %}"></image></a>
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+<!--footer start here -->
+
+    <div id="footer">
+
+
+
+        <div class="aa"> batch2020@iiitkottayam.ac.in</div>
+
+
+        <div class="aa">Copyright © 2021 IIIT KOTTAYAM</div><br>
+        <div id="contact">
+            <a class="cont" href="#" target="_blank">Instgram</span>
+                <a class="cont" href="#" target="_blank">Facebook</a>
+                <a class="cont" href="#" target="_blank">Discord</a>
+                <a class="cont" href="#" target="_blank">Git-Hub</a>
+        </div>
+        <div><a href="https://www.iiitkottayam.ac.in/" target="_blank">www.iiitkottayam.ac.in</a></div>
+    </div>
+</body>
+
+</html>

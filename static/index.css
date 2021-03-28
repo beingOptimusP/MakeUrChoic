@@ -1,0 +1,441 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;1,200&display=swap');
+
+
+    * {
+        margin: 0;
+        padding: 0;
+
+
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+
+ /* css for nav bar start here*/
+
+
+    .navbar-brand {
+        font-family: 'Lobster', cursive;
+        font-size: 30px;
+
+
+    }
+
+    .container-fluid {
+        font-family: 'Mulish', sans-serif;
+        font-size: 20px;
+
+        background-color: #2f2e41;
+    }
+
+    .collapse {
+        text-align: right;
+        font-weight: lighter;
+
+    }
+
+    .btn {
+        color: white;
+        border: 2px solid #f50057;
+        margin-right: 40px;
+
+    }
+
+    .btn:hover {
+        background-color: #f50057;
+        border: 2px solid white;
+    }
+
+
+
+    /* css for landing page start here*/
+
+
+    #container {
+
+        margin: 0;
+        padding: 0;
+        display: flex;
+
+
+
+    }
+
+    #content {
+        padding: 50px;
+        padding-top: 124px;
+        width: 50%;
+
+
+
+    }
+
+    #head {
+        font-size: 80px;
+        color: #2f2e41;
+        font-family: 'Lobster', cursive;
+        background: rgba(255, 184, 184, 0.4);
+        backdrop-filter: blur(10px);
+        padding-left: 40px;
+    }
+
+    #subhead {
+        font-size: 40px;
+        color: #2f2e41;
+        font-family: 'Lobster', cursive;
+        background: rgba(255, 184, 184, 0.4);
+        backdrop-filter: blur(10px);
+        padding-left: 40px;
+
+    }
+
+    #description {
+        font-size: 20px;
+        color: #2f2e41;
+        padding-top: 20px;
+        padding-right: 100px;
+        font-family: 'Mulish', sans-serif;
+        text-align: justify;
+        background: rgba(255, 184, 184, 0.4);
+        backdrop-filter: blur(10px);
+        padding: 40px;
+    }
+ 
+
+
+    /* poll animation */
+
+
+    #poll {
+        border-bottom: 2px solid #2f2e41;
+        margin: 50px;
+        margin-top: 120px;
+        padding: 0;
+        display: flex;
+        align-items: flex-end;
+        justify-items: center;
+        justify-content: center;
+
+        height: 500px;
+        width: 50%;
+
+    }
+
+    .pillar {
+        margin: 0;
+        padding: 0;
+
+        width: 100px;
+        height: 300px;
+
+        margin: 10px;
+    }
+
+
+    /* this are 4 pillars of poll animation  */
+
+    #p1 {
+        background-color: #2f2e41;
+        transition: all .4s;
+        animation: size;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        height: 100px;
+
+    }
+
+    #p2 {
+        background-color: #f50057;
+        transition: all .4s;
+        height: 100px;
+        animation: size;
+        animation-duration: 5s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+
+    }
+
+    #p3 {
+        background-color: #2f2e41;
+        transition: all .4s;
+        animation: size;
+        height: 50px;
+        animation-duration: 5s;
+        animation-delay: 1.5s;
+        animation-iteration-count: infinite;
+
+    }
+
+    #p4 {
+        background-color: #f50057;
+        transition: all .4s;
+        animation: size;
+        height: 100px;
+        animation-duration: 5s;
+        animation-delay: 1s;
+        animation-iteration-count: infinite;
+
+    }
+
+    @keyframes size {
+
+        50% {
+            height: 400px;
+        }
+
+    }
+
+     /* hero image */
+    #hero {
+
+
+        height: 500px;
+        width: 250px;
+        margin-left: 50px;
+
+    }
+
+
+ /* about us css start here */
+
+    #about {
+        font-family: 'Mulish', sans-serif;
+        width: 100%;
+        height: 800px;
+
+        background: linear-gradient(360deg, #2f2e41 10%, #f50057 80%);
+
+    }
+
+    .transition {
+        transition: .3s cubic-bezier(.3, 0, 0, 1.3)
+    }
+
+    .card {
+        background-color: #fff;
+        bottom: 0;
+        box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+
+        height: 450px;
+        left: 0;
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+        top: 20%;
+
+
+        width: 1000px;
+    }
+
+    .card:hover {
+        height: 600px;
+        width: 1000px;
+    }
+
+    .card:hover .cta-container {
+        display: inline;
+        margin-top: 380px;
+    }
+
+    .card:hover .card_circle {
+        background-size: cover;
+        border-radius: 0;
+        margin-top: -130px;
+    }
+
+    .card:hover h2 {
+
+        color: #fff;
+        margin-top: 100px;
+        padding: 5px;
+
+        text-shadow: 0 0 20px #fff, 0 0 30px #f50057, 0 0 40px #f50057, 0 0 50px #ff4da6;
+    }
+
+    .card:hover h2 small {
+        color: #fff
+    }
+
+    .card:hover p {
+        margin-top: 300px;
+    }
+
+    .card_circle {
+
+        background-color: #2f2e41;
+
+        background-size: cover;
+        border-radius: 50%;
+        height: 350px;
+        margin-left: -75px;
+        margin-top: -270px;
+        position: absolute;
+        width: 1150px;
+    }
+
+    h2 {
+        color: #3487f7;
+
+        font-family: 'Lobster', cursive;
+        font-size: 50px;
+        font-weight: 200;
+        margin-top: 150px;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        z-index: 9999;
+    }
+
+    #aboutcont {
+        color: rgb(0, 0, 0);
+        font-family: 'Mulish', sans-serif;
+        font-size: 18px;
+        font-weight: normal;
+        padding: 20px;
+        margin-top: 200px;
+        position: relative;
+        top: 80px;
+        text-align: center;
+        z-index: 9999;
+    }
+
+    .cta-container {
+        display: none;
+        margin-top: 1000px;
+        position: absolute;
+        top: 50px;
+        text-align: center;
+        width: 100%;
+        z-index: 9999;
+    }
+
+    .cta {
+
+
+
+        border: 2px solid #3487f7;
+        border-radius: 10px;
+
+        color: #3487f7;
+
+        font-family: 'Mulish', sans-serif;
+        font-size: 25px;
+        font-weight: 400;
+        height: 36px;
+
+        margin: 10px;
+        line-height: 36px;
+        margin-bottom: 15px;
+        padding: 10px;
+        text-decoration: none;
+
+        transition: 0.2s ease-out;
+    }
+
+    .cta:hover {
+        background-color: #f50057;
+        border: 2px solid white;
+        box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        color: #fff;
+
+
+    }
+
+
+    /* css for features card starts here */
+
+    .features {
+        display: flex;
+        background-color: #2f2e41;
+       padding-top: 100PX;
+
+        justify-content: center;
+    }
+
+
+    .box {
+        text-align: center;
+        background-color: white;
+        margin: 10px;
+        width: 300px;
+        height: 400px;
+        box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        transition: all .4s;
+    }
+ 
+    .box:hover {
+        width: 320px;
+        height: 420px;
+
+    }
+
+    .icon {
+        height: 100px;
+        margin: 40px;
+    }
+    .description{
+        margin: 20px;
+        padding: 10px;
+    }
+
+    .h{
+        font-family: 'Lobster', cursive;
+        font-size: 20px;
+        color: #3487f7;
+
+    }
+
+
+   /* css for footer start here */
+
+
+    #footer {
+        font-family: 'Mulish', sans-serif;
+        text-align: center;
+        line-height: 30px;
+        background-color: #2f2e41;
+        color: white;
+        padding-top: 100PX;
+    }
+
+    #contact {
+        font-family: 'Lobster', cursive;
+        letter-spacing: 2px;
+        margin: auto;
+        background-color: #2f2e41;
+        padding: 30px;
+    }
+
+    .cont {
+        background-color: #2f2e41;
+        color: white;
+        text-decoration: none;
+        margin: 30px;
+        padding: 20px;
+        font-size: 20px;
+        transition: all .4s;
+
+
+
+    }
+
+    .cont:hover {
+        font-size: 25px;
+        text-shadow: 0px 1px 5px black;
+        text-shadow: 0 0 20px #fff, 0 0 10px #f50057, 0 0 20px #f50057, 0 0 30px #ff4da6;
+    }
+
+
+    .aa {
+        padding: 10px;
+    
+    }
+
+    a:hover {
+        color: white;
+    }
+   

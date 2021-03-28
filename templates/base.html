@@ -1,0 +1,131 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href={% static "createpoll.css" %}>
+    <link rel="stylesheet" href="href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+</head>
+
+<body>
+
+    <!-- nav bar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="{% url 'home' %}">
+                <img src={% static "voting-poll1.png" %} alt="" width="45" height="40" class="d-inline-block align-top">
+            </a>
+            <a class="navbar-brand" href="{% url 'home' %}" style="color:#f50057;">myPoll</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{% url 'home' %}"
+                            style="color:white;">Home</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#about" style="color:white;">About Us</a>
+                    </li> -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="{% url 'create' %}" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" style="color:white;">
+                            Create a Poll
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+
+                <button class="btn btn-outline-success" type="submit">log in</button>
+
+            </div>
+        </div>
+    </nav>
+
+    {% block content%}
+
+    {% endblock %}
+
+<!-- feature cards -->
+
+    <div class="features">
+
+        <div class="box">
+            <image class="icon" src={% static "poll.png" %}></image>
+            <div class="h"> Open Poll</div>
+            <p class="description">Just create a poll and share link with your frds to vote</p>
+        </div>
+
+        <div class="box">
+            <image class="icon" src={% static "ballot.png" %}></image>
+            <div class="h">Closed Poll</div>
+            <p class="description">Create a poll, and mention email id of all eligible voters , they will recieve a mail throug us and they could only be able to vote once</p>
+        </div>
+
+        <div class="box">
+            <image class="icon" src={% static "polling.png" %}></image>
+            <div class="h">Preferencial Voting System</div>
+            <p class="description">Winner is decided on the basis of best preferance of all voters and not just by majority</p>
+        </div>
+
+
+
+
+    </div>
+
+    <!--footer start here -->
+
+    <div id="footer">
+
+
+
+        <div class="aa"> batch2020@iiitkottayam.ac.in</div>
+
+
+        <div class="aa">Copyright © 2021 IIIT KOTTAYAM</div><br>
+        <div id="contact">
+            <a class="cont" href="#" target="_blank">Instgram</span>
+                <a class="cont" href="#" target="_blank">Facebook</a>
+                <a class="cont" href="#" target="_blank">Discord</a>
+                <a class="cont" href="#" target="_blank">Git-Hub</a>
+        </div>
+        <div><a href="https://www.iiitkottayam.ac.in/" target="_blank">www.iiitkottayam.ac.in</a></div>
+    </div>
+</body>
+
+
+<!--script for adding new option -->
+
+<script>
+    function createoption() {
+        var opt = document.createElement("input");
+        opt.className = "input";
+        opt.placeholder = "Type your Answere here...";
+
+        document.getElementById('newopt').appendChild(opt);
+    }
+</script>
+
+</html>

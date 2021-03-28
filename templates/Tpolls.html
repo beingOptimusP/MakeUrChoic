@@ -1,0 +1,104 @@
+{% extends "base.html" %}
+
+{% block content %}
+<br><br><br>
+<center><h3 class="h3" >Vote your poll and see results here</h3></center><br><br>
+
+<center><h2>PVS POlls</h2></center>
+
+{% for i in poll %}
+    <div class="coont" style="margin-left: 100px;margin-right:100px">
+        <center>
+            <table class="table table-striped table-dark">
+                <center>
+                    <thead>
+                        <tr>
+                            <th>
+                                <center>S.no</center>
+                            </th>
+                            <th>
+                                <center>Title</center>
+                            </th>
+                            <th>
+                                <center>Follow this button to vote</center>
+                            </th>
+                            <th>
+                                <center>Results</center>
+                            </th>
+                        </tr>
+                    </thead>
+                </center>
+                <tbody>
+                    <tr>
+                        <td>
+                            <center>{{i.id}}</center>
+                        </td>
+                        <td>
+                            <center>{{i.Title}} <i class="fas fa-arrows-alt-h"> </i></center>
+                        </td>
+                        <td><a href="{% url 'poll' i.id %}">
+                                <center><button class="btn btn-primary">vote</button></center>
+                            </a></td>
+                        <td><a href="{% url 'result' i.id %}">
+                                <center><button class="btn btn-primary">Results</button></center>
+                            </a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </center>
+    </div>
+
+
+{% endfor %}
+
+
+
+
+<!-- {% for i in poll1 %}
+<div class="coont" style="margin-left: 100px;margin-right:100px">
+    <center>
+        <table class="table table-striped table-dark">
+            <center>
+                <thead>
+                    <tr>
+                        <th>
+                            <center>S.no</center>
+                        </th>
+                        <th>
+                            <center>Title</center>
+                        </th>
+                        <th>
+                            <center>Follow this button to vote</center>
+                        </th>
+                        <th>
+                            <center>Results</center>
+                        </th>
+                    </tr>
+                </thead>
+            </center>
+            <tbody>
+                <tr>
+                    <td>
+                        <center>{{i.id}}</center>
+                    </td>
+                    <td>
+                        <center>{{i.Title}} <i class="fas fa-arrows-alt-h"> </i></center>
+                    </td>
+                    <td><a href="{% url 'poll' i.id %}">
+                            <center><button class="btn btn-primary">vote</button></center>
+                        </a></td>
+                    <td><a href="{% url 'result' i.id %}">
+                            <center><button class="btn btn-primary">Results</button></center>
+                        </a></td>
+                </tr>
+            </tbody>
+        </table>
+    </center>
+</div>
+
+
+{% endfor %} -->
+
+{% endblock %}
+
+

@@ -1,0 +1,168 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href={% static "/favicon.ico" %} type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href={% static "index.css" %}>
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div style="margin-top:-9px;" class="container-fluid">
+            <a class="navbar-brand" href="{% url 'home' %}">
+                <img src={% static "voting-poll1.png" %} alt="" width="45" height="40" class="d-inline-block align-top">
+            </a>
+            <a class="navbar-brand" href="{% url 'home' %}" style="color:#f50057;">myPoll</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about" style="color:white;">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'Tpolls' %}" style="color:white;">Polls</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'Team' %}" style="color:white;">Team</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="{% url 'create' %}" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" style="color:white;">
+                            Create a Poll
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+                <!--log in and sign up button -->
+
+                <button class="btn btn-outline-success" type="submit">log in</button>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!--container for landing page starts here -->
+
+
+    <div id="container" >
+        <!--this is box for contnt -->
+        <div id="content">
+            <div id="head" style="font-weight:small;" > MakeYourChoice</div>
+            <div id="subhead">The Gateway to Righteous Voting</div>
+            <p id="description">Tired of age old way of flawed polling? 
+            Worry not!!! Team MakeUrChoice brings you a very new and unique way of polling which will help you pick out the best option of all. We bring to you the modern tool which helps you secure your polls against double votes, spam votes etc .
+            We have various unique features and mode of polls.
+            Explore our most salient featured PREFRENTIAL POLL which helps you get the most desirable choice.
+        </div>
+
+
+        <!-- main page animation start here -->
+        <div id="poll">
+
+            <div class="pillar" id="p1"></div>
+            <div class="pillar" id="p2"></div>
+            <div class="pillar" id="p3"></div>
+            <div class="pillar" id="p4"></div>
+            <image src={% static "man.png" %} id="hero"></image>
+            <hr>
+
+        </div>
+    </div>
+
+
+
+    <!--about us page -->
+    <div id="about">
+
+
+        <!--about us card -->
+
+        <div class="card transition">
+            <h2 class="transition">About us</h2>
+            <p id="aboutcont">MakeUrChoice is an initiative by 4 students of IIIT Kottayam to change the way of regular voting.
+            This is an idea by M Sai Vamsi which brings out a new vision of choosing a particular option by a large number of people. The team consists of people who believe the current system to be flawed and want to change the system. The idea was executed by the team consisting of M Sai Vamsi, Prajjwal Jogdand, Sarthak Bindal and Harsh Raj.</p>
+            <div class="cta-container transition"><a href="#" class="cta">Create poll</a><a href="#" class="cta">Log
+                    in</a></div>
+                    
+            <div class="card_circle transition"></div>
+        </div>
+    </div>
+
+
+    <!--features cards -->
+
+
+    <div class="features">
+
+        <div class="box">
+            <image class="icon" src={% static "poll.png" %}></image>
+            <div class="h"> Open Poll</div>
+            <p class="description">Just create a poll and share link with your frds to vote</p>
+        </div>
+
+        <div class="box">
+            <image class="icon" src={% static "ballot.png" %}></image>
+            <div class="h">Closed Poll</div>
+            <p class="description">Create a poll, and mention email id of all eligible voters , they will recieve a mail through our website and they could only be able to vote once</p>
+        </div>
+
+        <div class="box">
+            <image class="icon" src={% static "polling.png" %}></image>
+            <div class="h">Preferencial Voting System</div>
+            <p class="description">Winner is decided on the basis of best preferance of all voters and not just by majority</p>
+        </div>
+
+
+
+
+    </div>
+    
+    <!--footer start here -->
+
+    <div id="footer">
+
+
+
+        <div class="aa"> batch2020@iiitkottayam.ac.in</div>
+    
+        <div class="aa">Copyright © 2021 IIIT KOTTAYAM</div><br>
+        <div id="contact">
+            <a class="cont" href="#" target="_blank">Instgram</span>
+                <a class="cont" href="#" target="_blank">Facebook</a>
+                <a class="cont" href="#" target="_blank">Discord</a>
+                <a class="cont" href="#" target="_blank">Git-Hub</a>
+        </div>
+        <div><a href="https://www.iiitkottayam.ac.in/" target="_blank">www.iiitkottayam.ac.in</a></div>
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+body {
+    background: linear-gradient(360deg, #2f2e41 10%, #f50057 80%);
+    margin: 0;
+    font-family: 'Mulish', sans-serif;
+
+}
+
+.navbar {
+    padding: 0;
+}
+
+.navbar-brand {
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+
+
+}
+
+.container-fluid {
+    font-family: 'Mulish', sans-serif;
+    font-size: 20px;
+
+    background-color: #2f2e41;
+}
+
+.collapse {
+    text-align: right;
+    font-weight: lighter;
+
+}
+
+.btn {
+    color: white;
+    border: 2px solid #f50057;
+    margin-right: 40px;
+
+}
+
+.btn:hover {
+    background-color: #f50057;
+    border: 2px solid white;
+}
+
+
+.container {
+    background-color: white;
+    max-width: 900px;
+    border: 2px solid red;
+    margin: auto;
+    margin-top: 20px;
+    
+
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    margin: 30px;
+    color: #3487f7;
+}
+
+label {
+    margin-left: 10px;
+    color: #2f2e41;
+    font-size: 20px;
+}
+
+.field {
+    margin: 10px;
+    padding: 2px;
+
+}
+
+.input {
+    display: block;
+    border: 2px solid rgb(114, 114, 114);
+    border-radius: 4px;
+    padding: 4px;
+    margin: 0px;
+    margin-top: 4px;
+    font-size: 15px;
+    width: 99.1%;
+    height: 30px;
+}
+
+button {
+    margin-top: 4px;
+    width: 150px;
+    border: 2px solid #3487f7;
+    border-radius: 4px;
+    color: #3487f7;
+}
+
+button:hover {
+    background-color: #f50057;
+    border: 2px solid white;
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: #fff;
+}
+
+.features {
+    display: flex;
+
+    margin: 100px;
+
+    justify-content: center;
+}
+
+.box {
+    text-align: center;
+    background-color: white;
+    margin: 10px;
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all .4s;
+}
+
+.box:hover {
+    width: 320px;
+    height: 420px;
+
+}
+
+.icon {
+    height: 100px;
+    margin: 40px;
+}
+
+p {
+    margin: 20px;
+    padding: 10px;
+}
+
+.h {
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+    color: #3487f7;
+
+}
+
+#footer {
+    font-family: 'Mulish', sans-serif;
+    text-align: center;
+    line-height: 30px;
+    background-color: transparent;
+    color: white;
+}
+
+#contact {
+    font-family: 'Lobster', cursive;
+    letter-spacing: 2px;
+    margin: auto;
+    background-color: transparent;
+    padding: 30px;
+}
+
+.cont {
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    margin: 30px;
+    padding: 20px;
+    font-size: 20px;
+    transition: all .4s;
+
+
+
+}
+
+.cont:hover {
+    font-size: 25px;
+    text-shadow: 0px 1px 5px black;
+    text-shadow: 0 0 20px #fff, 0 0 10px #f50057, 0 0 20px #f50057, 0 0 30px #ff4da6;
+}
+
+
+.aa {
+    padding: 10px;
+    background-color: transparent;
+}
+
+a:hover {
+    color: white;
+}
